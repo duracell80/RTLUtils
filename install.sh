@@ -11,5 +11,4 @@ sudo make install
 sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
 sudo ldconfig
 
-sudo cp ../blacklist.rtl.conf /etc/modprobe.d/
-sudo reboot
+sudo cp ../../blacklist.rtl.conf /etc/modprobe.d/
