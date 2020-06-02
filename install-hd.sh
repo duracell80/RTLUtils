@@ -5,7 +5,7 @@ git clone https://github.com/theori-io/nrsc5.git
 cd nrsc5
 mkdir build
 cd build
-cmake -DUSE_COLOR=ON
+cmake ../ -DINSTALL_UDEV_RULES=ON
 make
 sudo make install
 sudo ldconfig
