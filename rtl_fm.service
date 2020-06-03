@@ -1,0 +1,11 @@
+[Unit]
+Description=RTL FM Server, turns local broadcast FM stations into online radio $
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/rtl_fm_streamer
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
