@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install -y  sox git cmake pkg-config libusb-1.0-0-dev
+sudo apt-get install -y  sox git cmake pkg-config libusb-1.0-0-dev ffmpeg
 sudo cp -f blacklist-rtl.conf /etc/modprobe.d
 chmod +x *.sh
 
