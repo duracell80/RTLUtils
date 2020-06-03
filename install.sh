@@ -27,4 +27,4 @@ sudo ldconfig
 
 sudo systemctl daemon-reload
 sudo systemctl enable rtl_fm.service
-sudo systemctl start test.service
+sudo systemctl start rtl_fm.service
