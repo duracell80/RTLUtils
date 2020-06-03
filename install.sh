@@ -12,3 +12,13 @@ make
 sudo make install
 sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
 sudo ldconfig
+
+cd /home/pi/RTLUtils
+git clone https://github.com/AlbrechtL/rtl_fm_streamer.git
+cd rtl_fm_streamer
+mkdir build
+cd build
+cmake ../
+make
+sudo make install
+sudo ldconfig
