@@ -1,0 +1,11 @@
+[Unit]
+Description=RTL Airband Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/sbin/rtl_airband.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
