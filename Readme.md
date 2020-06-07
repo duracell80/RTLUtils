@@ -13,7 +13,7 @@ Here is some general information about the hardware and software:
 ```
 $ cd ~/
 $ git clone https://github.com/duracell80/RTLUtils.git
-$ cd RTLUtils.git
+$ cd RTLUtils
 
 $ sudo chmod +x *.sh
 ```
@@ -24,12 +24,15 @@ To install only the SDR tools without a streamer
 $ ./install.sh
 
 after reboot and knowing a local FM station's frequency
-$ cd ~/
-$ ./tune_fm 103.3M
+$ cd ~/RTLUtils
+$ sudo chmod +x *.sh
+$ ./tune_fm.sh 103.3M
 ```
 ## Install RTL_FM with FM Server (FM over IP)
 To install only the SDR tools without a streamer
 ```
+$ cd ~/RTLUtils
+$ sudo chmod +x *.sh
 $ ./install-streamer.sh
 $ sudo reboot
 ```
