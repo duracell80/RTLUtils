@@ -76,12 +76,10 @@ Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Start streaming on frequency: 
 Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Tuned to 103780000 Hz.
 Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Mono demodulation
 Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Waiting for connection...
-Jun 07 07:56:24 raspberrypi rtl_fm_streamer[972]: Error sending stream: "Broken pipe". Close the connection!
 Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Connected
 Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Start streaming on frequency: 103300000 Hz [stereo: 0]
 Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Tuned to 103780000 Hz.
 Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Mono demodulation
-Jun 07 07:56:47 raspberrypi rtl_fm_streamer[972]: Waiting for connection...
 
 ```
 
