@@ -44,8 +44,8 @@ From your PC or Phone's browser via port 2346
 http://your-pi-ip:2346/103300000
 ```
 
-This could be useful if you're wanting to listen to an FM station on your phone maybe in VLC without having to use Internet data to do so, using your Raspberry Pi as a conduit.
+This could be useful if you're wanting to listen to an FM station on your phone maybe in VLC without having to use Internet data to do so, using your Raspberry Pi as a conduit. Maybe your local FM station doesn't carry sporting events on their online stream but you would still like to listen to the event using the player on your phone via WiFi.
 
-To listen to a local FM radio station over your local LAN after reboot and knowing the IP address of the Pi and a frequency to tune to such as 103.3; Open the URL in a web browser or VLC player as ... http://192.168.1.180:2346/103300000. Add these as URL's to M3U or PLS files to use within Mopidy, Moode, Volumio or any other MPD player. Note as stated by rtl_fm_streamer's creator, this is a one dongle, one station, one client deal. It's not possible to tune to multiple stations at the same time. Switching between listening devices I have found it beneficial to reboot the pi.
+To listen to a local FM radio station over your local LAN after reboot and knowing the IP address of the Pi and a frequency to tune to such as 103.3; Open the URL in a web browser or VLC player as ... http://192.168.1.180:2346/103300000. Add these as URL's to M3U or PLS files to use within Mopidy, Moode, Volumio or any other MPD player. Note as stated by rtl_fm_streamer's creator, this is a one dongle, one station, one client deal. It's not possible to tune to the same station from multiple devices at the same time. Switching between listening devices I have found it beneficial to reboot the pi.
 
 Knowing your local FM frequencies is very helpful and I recommend putting together a playlist of the stations you want to tune to, in this way you could mix local FM broadcasts with online streams in one playlist file.
