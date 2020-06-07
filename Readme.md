@@ -1,12 +1,13 @@
 # SDR Radio Tools for Volumio, Moode, Mopidy etc
 These tools require an RTL chipset based DVB-T dongle and strong radio signals. There are a bunch of scripts to listen to FM directly using the sox play command ... or as an IP feed from the ip address of the Raspberry Pi.
 
+[Required Hardware](https://www.amazon.com/RTL-SDR-Realtek-RTL2832U-Receiver-Adapter/dp/B087N7WVDZ/ref=sr_1_7?dchild=1&keywords=rtl+dvb-t+mini&qid=1591508644&sr=8-7)
+
 Here is some general information about the hardware and software:
 
 - https://cromwell-intl.com/open-source/raspberry-pi/sdr-getting-started.html
 - https://photobyte.org/using-the-raspberry-pi-as-an-rtl-sdr-dongle-server/
 - https://github.com/AlbrechtL/rtl_fm_streamer
-- https://www.amazon.com/RTL-SDR-Realtek-RTL2832U-Receiver-Adapter/dp/B087N7WVDZ/ref=sr_1_7?dchild=1&keywords=rtl+dvb-t+mini&qid=1591508644&sr=8-7
 
 ## Clone the repo
 
