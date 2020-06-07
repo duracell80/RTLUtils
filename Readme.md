@@ -56,7 +56,7 @@ Recording an FM program using VLC.
 Allowing distant family members the opportunity to listen to local sports commentary, otherwise not found online.
 
 ### Listen in Browser
-To listen to a local FM radio station over your local LAN after reboot and knowing the IP address of the Pi and a frequency to tune to such as 103.3; Open the URL in a web browser or VLC player such as ... http://192.168.1.180:2346/95500000 for 95.5FM. Add these as URL's to M3U or PLS files to use within Mopidy, Moode, Volumio or any other MPD player. Note as stated by rtl_fm_streamer's creator, this is a one dongle, one station, one client deal. It's not possible to tune to the same station from multiple devices at the same time. Switching between listening devices I have found it beneficial to reboot the pi.
+To listen to a local FM radio station over your local LAN after reboot and knowing the IP address of the Pi and a frequency to tune to such as 103.3; Open the URL in a web browser or VLC player such as ... http://192.168.1.180:2346/95500000 for 95.5FM. Add these as URL's to M3U or PLS files to use within Mopidy, Moode, Volumio or any other MPD player. Note as stated by rtl_fm_streamer's creator, this is a one dongle, one station, one client deal. It's not possible to tune to the same station from multiple devices at the same time. Switching between listening devices I have found it beneficial to stop and start the service or reboot the pi.
 
 ### Starting and Stopping the Radio Server
 ```
