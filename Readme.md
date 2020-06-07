@@ -22,9 +22,12 @@ $ sudo chmod +x *.sh
 ## Install RTL_FM
 To install only the SDR tools without a streamer
 ```
+$ cd ~/RTLUtils
 $ ./install.sh
+```
+After reboot and knowing a local FM station's frequency and already knowing your Pi is outputting sound ...
 
-after reboot and knowing a local FM station's frequency
+```
 $ cd ~/RTLUtils
 $ sudo chmod +x *.sh
 $ ./tune_fm.sh 103.3M
