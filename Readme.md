@@ -8,6 +8,8 @@ Here is some general information about the hardware and software:
 - https://cromwell-intl.com/open-source/raspberry-pi/sdr-getting-started.html
 - https://photobyte.org/using-the-raspberry-pi-as-an-rtl-sdr-dongle-server/
 - https://github.com/AlbrechtL/rtl_fm_streamer
+
+## IPRadio
 - To find your Pi's Ethernet address use "ifconfig eth0"
 - To find your Pi's WiFi address use "ifconfig wlan0"
 
