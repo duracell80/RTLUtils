@@ -12,7 +12,7 @@ Here is some general information about the hardware and software:
 ## IPRadio
 - To find your Pi's Ethernet address use "ifconfig eth0"
 - To find your Pi's WiFi address use "ifconfig wlan0"
-- Fof 90.3FM Listen at http://your-pi-ip:2346/90300000
+- To listen to 90.3FM over your network http://your-pi-ip:2346/90300000
 
 ## Clone the repo
 
