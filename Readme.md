@@ -91,3 +91,8 @@ Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Mono demodulation
 You can tune to a stereo stream, depending on the capability of your Pi. Contact the rtl_fm_streamer maintainer. Knowing your local FM frequencies is very helpful and I recommend putting together a playlist of the stations you want to tune to, in this way you could mix local FM broadcasts with online streams in one playlist file. It is possible to listen to FM bands beyond what a normal HiFi can recieve. You could try SDR# on Windows to explore your local signals. In the US it might be possible to tune to a NOAA broadcast.
 
 [Lookup FM Frequencies Here](https://www.fmlist.org)
+
+## ToDo
+- Service: HD (Hybrid Digital) Radio
+- Service: RTL_TCP
+- Service: ATC Airband scanner
