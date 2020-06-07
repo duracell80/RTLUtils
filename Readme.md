@@ -65,26 +65,26 @@ $ sudo service rtl_fm status
 
 rtl_fm.service - RTL FM Server, turns local broadcast FM stations into online radio $
    Loaded: loaded (/etc/systemd/system/rtl_fm.service; enabled; vendor preset: enabled)
-   Active: active (running) since Sun 2020-06-07 07:54:30 BST; 28s ago
+   Active: active (running) since Sun 2020-06-07 07:54:30 BST; 2min 25s ago
  Main PID: 972 (rtl_fm_streamer)
     Tasks: 8 (limit: 2200)
-   Memory: 14.0M
+   Memory: 13.9M
    CGroup: /system.slice/rtl_fm.service
            └─972 /usr/local/bin/rtl_fm_streamer
 
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Tuner gain set to automatic.
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Init FIR hamming, size: 90 sample_rate: 240000
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Tuned to 100496000 Hz.
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Oversampling input by: 8x.
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Oversampling output by: 1x.
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Buffer size: 4.27ms
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Sampling at 1920000 S/s.
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Output at 240000 Hz.
-Jun 07 07:54:30 raspberrypi rtl_fm_streamer[972]: Waiting for connection...
-Jun 07 07:54:33 raspberrypi rtl_fm_streamer[972]: Connected
+Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Start streaming on frequency: 103300000 Hz [stereo: 0]
+Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Tuned to 103780000 Hz.
+Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Mono demodulation
+Jun 07 07:56:23 raspberrypi rtl_fm_streamer[972]: Waiting for connection...
+Jun 07 07:56:24 raspberrypi rtl_fm_streamer[972]: Error sending stream: "Broken pipe". Close the connection!
+Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Connected
+Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Start streaming on frequency: 103300000 Hz [stereo: 0]
+Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Tuned to 103780000 Hz.
+Jun 07 07:56:46 raspberrypi rtl_fm_streamer[972]: Mono demodulation
+Jun 07 07:56:47 raspberrypi rtl_fm_streamer[972]: Waiting for connection...
 
 ```
 
-Knowing your local FM frequencies is very helpful and I recommend putting together a playlist of the stations you want to tune to, in this way you could mix local FM broadcasts with online streams in one playlist file. It is possible to listen to FM bands beyond what a normal HiFi can recieve. You could try SDR# on Windows to explore your local signals. In the US it might be possible to tune to a NOAA broadcast.
+You can tune to a stereo stream, depending on the capability of your Pi. Contact the rtl_fm_streamer maintainer. Knowing your local FM frequencies is very helpful and I recommend putting together a playlist of the stations you want to tune to, in this way you could mix local FM broadcasts with online streams in one playlist file. It is possible to listen to FM bands beyond what a normal HiFi can recieve. You could try SDR# on Windows to explore your local signals. In the US it might be possible to tune to a NOAA broadcast.
 
 [Lookup FM Frequencies Here](https://www.fmlist.org)
