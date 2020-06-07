@@ -14,17 +14,4 @@ make
 sudo make install
 sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
 sudo ldconfig
-
-cd ~/RTLUtils
-git clone https://github.com/AlbrechtL/rtl_fm_streamer.git
-cd rtl_fm_streamer
-mkdir build
-cd build
-cmake ../
-make
-sudo make install
-sudo ldconfig
-
-sudo systemctl daemon-reload
-sudo systemctl enable rtl_fm.service
-sudo systemctl start rtl_fm.service
+sudo reboot
