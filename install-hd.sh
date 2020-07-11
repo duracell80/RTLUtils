@@ -12,7 +12,9 @@ sudo ldconfig
 
 sudo apt-get install python3-pyaudio
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0
-git clone https://github.com/cmnybo/nrsc5-gui.git
+git clone https://github.com/duracell80/nrsc5-gui.git
 cd nrsc5-gui
 python3 nrsc5_gui.py
 
+cd ../
+git clone https://github.com/KYDronePilot/hdfm.git
