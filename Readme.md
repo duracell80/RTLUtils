@@ -154,11 +154,15 @@ You can tune to a stereo stream, depending on the capability of your Pi. Contact
 Artists may be able to use these libraries with SoX or Alsa to create some pretty awesome sound glitches
 
 ```
+SOS Transmissions from Mars via Public Radio
+rtl_fm -M fm -s 32k -f 90.3M - | aplay -r 48000 -f S16_LE
+
 Very slow playback: rtl_fm -M fm -s 250k -f 103.3M - | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
 Very fast playback: rtl_fm -M fm -s 250k -f 103.3M - | play -r 500k -t raw -e s -b 16 -c 1 -V1 -
 
 Upside Down Transmission on Public Radio with Alsa
 rtl_fm -M fm -s 250k -f 90.3M - | aplay -r 48000 -f S16_LE
+rtl_fm -M fm -s 175k -f 90.3M - | aplay -r 48000 -f S16_LE
 ```
 
 Enjoy!
