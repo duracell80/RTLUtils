@@ -39,6 +39,7 @@ $ ./tune_fm.sh 103.3M
 Follow these steps to create a file of presets containing your clearest stations. Increase the chances of scanning for and finding frequencies by hooking your SDR up to an FM antenna.
 
 # First Run The Scan
+You may hear silence on some frequencies, I have set the script to ignore weak frequencies, just press "Cursor Up" on your keyboard to keep scanning what rtl_power found.
 ```
 $ cd ~/RTLUtils
 $ sudo chmod +x *.sh
