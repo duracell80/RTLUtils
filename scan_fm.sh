@@ -44,14 +44,12 @@ while : ; do
                 pkill rtl_fm
                 sleep 2s
                 #rtl_fm -g 50 -f $TUNE -M fm -s 250k -l 20 -E deemp |  play -r 250k -t raw -e s -b 16 -c 1 -V1 - lowpass 16k&
-		rtl_fm -M fm -s 250k -l 20 -r 48000 -f $TUNE - | aplay -r 48000 -f S16_LE&
+		rtl_fm -M fm -s 250k -r 48000 -f $TUNE - | aplay -r 48000 -f S16_LE&
 
 	elif [[ $k == *"B"* ]] ; then
 		if (( $LINE >= $PLEN ))
                 then
                         ((LINE-=1))
-                else
-                        LINE=0
                 fi
 
                 FREQ=${lines[LINE]}
@@ -62,7 +60,7 @@ while : ; do
                 pkill rtl_fm
                 sleep 2s
 		#rtl_fm -g 50 -f $TUNE -M fm -s 250k -l 20 -E deemp |  play -r 250k -t raw -e s -b 16 -c 1 -V1 - lowpass 16k&
-		rtl_fm -M fm -s 250k -l 20 -r 48000 -f $TUNE - | aplay -r 48000 -f S16_LE&
+		rtl_fm -M fm -s 250k -r 48000 -f $TUNE - | aplay -r 48000 -f S16_LE&
         elif [[ $k == *"C"* ]] ; then
                 ((TUNE+=100000))
                 printf "\nFine Tuning Radio: ${FREQ}\n"
