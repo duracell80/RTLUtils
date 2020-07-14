@@ -77,7 +77,7 @@ Here were my clear stations ...
 
 
 # Listen to Your Presets
-Now that you have a list of frequencies tied to your SDR and local area you can tune these with the up and down cursor keys, you ca use these frequencies later with rtl_fm_streamer.
+Now that you have a list of frequencies tied to your SDR and local area you can tune these with the up and down cursor keys, you can use these frequencies later with rtl_fm_streamer.
 
 ```
 $ cd ~/RTLUtils
@@ -149,3 +149,6 @@ You can tune to a stereo stream, depending on the capability of your Pi. Contact
 - Service: HD (Hybrid Digital) Radio
 - Service: RTL_TCP
 - Service: ATC Airband scanner
+
+
+Enjoy!
