@@ -49,6 +49,33 @@ $ ./scan_fm.sh
 # Save Your Clear Stations 
 With scan_fm running tune the radio by using the Up and Down arrow keys. The Left and Right arrow keys will allow the fine tune within that current frequency range. When you hear a clear station hit Shift+M to add that clear frequency to your station "memory" ... just like a real radio! You'll end up with a file called fm_preset.csv.
 
+```
+$ cd ~/RTLUtils
+$ ./scan_fm.sh
+$ cat fm_preset.csv
+```
+Here were my clear stations ...
+
+```
+90243750
+91125000
+92062500
+92843750
+94093750
+95500000
+96281250
+97062500
+97843750
+99406250
+99875000
+101081250
+103312500
+104206250
+106125000
+107218750
+```
+
+
 # Listen to Your Presets
 Now that you have a list of frequencies tied to your SDR and local area you can tune these with the up and down cursor keys, you ca use these frequencies later with rtl_fm_streamer.
 
