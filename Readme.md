@@ -35,10 +35,10 @@ $ sudo chmod +x *.sh
 $ ./tune_fm.sh 103.3M
 ```
 
-## Finding FM Station Frequencies using rtl_power
+# Finding FM Station Frequencies using rtl_power
 Follow these steps to create a file of presets containing your clearest stations. Increase the chances of scanning for and finding frequencies by hooking your SDR up to an FM antenna.
 
-# First Run The Scan
+## First Run The Scan
 You may hear silence on some frequencies, I have set the script to ignore weak frequencies, just press "Cursor Up" on your keyboard to keep scanning what rtl_power found.
 ```
 $ cd ~/RTLUtils
@@ -46,7 +46,7 @@ $ sudo chmod +x *.sh
 $ ./scan_fm.sh
 ```
 
-# Save Your Clear Stations 
+## Save Your Clear Stations 
 With scan_fm running tune the radio by using the Up and Down arrow keys. The Left and Right arrow keys will allow the fine tune within that current frequency range. When you hear a clear station hit Shift+M to add that clear frequency to your station "memory" ... just like a real radio! You'll end up with a file called fm_preset.csv.
 
 ```
@@ -76,7 +76,7 @@ Here were my clear stations ...
 ```
 
 
-# Listen to Your Presets
+## Listen to Your Presets
 Now that you have a list of frequencies tied to your SDR and local area you can tune these with the up and down cursor keys, you can use these frequencies later with rtl_fm_streamer.
 
 ```
@@ -84,7 +84,7 @@ $ cd ~/RTLUtils
 $ ./start_fm.sh
 ```
 
-## Install RTL_FM with FM Server (FM over IP)
+# Install RTL_FM with FM Server (FM over IP)
 To install the SDR with a streamer
 ```
 $ cd ~/RTLUtils
