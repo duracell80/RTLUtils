@@ -9,10 +9,7 @@ Here is some general information about the hardware and software:
 - https://photobyte.org/using-the-raspberry-pi-as-an-rtl-sdr-dongle-server/
 - https://github.com/AlbrechtL/rtl_fm_streamer
 
-## IPRadio
-- To find your Pi's Ethernet address use "ifconfig eth0"
-- To find your Pi's WiFi address use "ifconfig wlan0"
-- To listen to 90.3FM over your network in stereo http://your-pi-ip:2346/90300000/1
+
 
 ## Clone the repo
 
@@ -37,6 +34,28 @@ $ cd ~/RTLUtils
 $ sudo chmod +x *.sh
 $ ./tune_fm.sh 103.3M
 ```
+
+## Finding FM Station Frequencies using rtl_power
+Follow these steps to create a file of presets containing your clearest stations. Increase the chances of scanning for and finding frequencies by hooking your SDR up to an FM antenna.
+
+# First Run The Scan
+```
+$ cd ~/RTLUtils
+$ sudo chmod +x *.sh
+$ ./scan_fm.sh
+```
+
+# Save Your Clear Stations 
+With scan_fm running tune the radio by using the Up and Down arrow keys. The Left and Right arrow keys will allow the fine tune within that current frequency range. When you hear a clear station hit Shift+M to add that clear frequency to your station "memory" ... just like a real radio! You'll end up with a file called fm_preset.csv.
+
+# Listen to Your Presets
+Now that you have a list of frequencies tied to your SDR and local area you can tune these with the up and down cursor keys, you ca use these frequencies later with rtl_fm_streamer.
+
+```
+$ cd ~/RTLUtils
+$ ./start_fm.sh
+```
+
 ## Install RTL_FM with FM Server (FM over IP)
 To install the SDR with a streamer
 ```
@@ -48,6 +67,12 @@ $ sudo reboot
 From your PC or Phone's browser via port 2346 for FM station 103.3 ...
 http://your-pi-ip:2346/103300000/2
 ```
+
+## IPRadio
+- To find your Pi's Ethernet address use "ifconfig eth0"
+- To find your Pi's WiFi address use "ifconfig wlan0"
+- To listen to 90.3FM over your network in stereo http://your-pi-ip:2346/90300000/1
+
 ### Use Cases
 This could be useful if you're wanting to listen to an FM station on your phone maybe in VLC without having to use Internet data to do so, using your Raspberry Pi as a conduit.
 
