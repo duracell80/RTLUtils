@@ -150,5 +150,12 @@ You can tune to a stereo stream, depending on the capability of your Pi. Contact
 - Service: RTL_TCP
 - Service: ATC Airband scanner
 
+## FM Glitches
+Artists may be able to use these libraries with SoX to create some pretty awesome sound glitches
+
+```
+Very slow playback: rtl_fm -M fm -s 250k -f 103.3M - | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
+Very fast playback: rtl_fm -M fm -s 250k -f 103.3M - | play -r 500k -t raw -e s -b 16 -c 1 -V1 -
+```
 
 Enjoy!
