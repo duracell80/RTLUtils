@@ -3,7 +3,8 @@
 printf "FM Radio Tuner [ 88-108Mhz ]\n\n"
 
 printf "> Ctl+C to exit\n"
-printf "> Skip to next with cursor keys\n\n\n"
+printf "> Skip to next with Up Arrow key or Up on your DPad\n"
+printf "> Skip to previous with Down Arrow key or Down on your DPad\n\n\n"
 
 PSET=$'\n' read -d '' -r -a lines < fm_preset.csv
 PLEN=$(cat fm_preset.csv | wc -l)
